@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #f24f04;
+    --text-color: #252429;
+    --bg-color: #fffefb;
+    --rr-color: #ffa50a;
+    --other-color: #95949a;
+    --bb-color: #fff2de;
+
+    --big-font: 3.2rem;
+    --h2-font: 2rem;
+    --p-font: 1rem
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.927), rgba(0, 0, 0, 0.9)), url(../First/img/Background.jpg) no-repeat center center / cover;
+    color: var(--bg-color);
+}
+
+.btn {
+    position: fixed;
+    display: inline-block;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    margin: 20px;
+    padding: 12px 26px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all ease 0.52s;
+}
+
+.btn:hover {
+    color: var(--main-color);
+    background: #fff;
+    border: 1px solid var(--main-color);
+    transform: scale(1.1) translateX(-5px);
+}
+
+.body-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* text-align: center; */
+    margin: auto;
+    color: var(--bg-color);
+}
+
+header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    text-align: center;
+    align-self: center;
+    letter-spacing: 5px;
+    max-width: 800px;
+    margin-left: 20px;
+    font-size: var(--big-font);
+    font-weight: 900;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-size: var(--h2-font);
+    font-weight: 700;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+p {
+    color: var(--main-color);
+}
+
+span, strong, li {
+    font-size: var(--h2-font);
+    color: var(--main-color);
+    font-style: italic;
+    font-weight: 500;
+    max-width: 1000px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    background-color: var(--text-color);
+}
+.slide-text {
+    text-align: left;
+    padding: 20px;
+    white-space: nowrap;
+    animation: slideshow 80s linear infinite;
+}
+
+.slide-text h2 {
+    font-size: 50px;
+}
+
+@keyframes slideshow {
+    from {
+        transform: translateX(60%);
+    }
+    to {
+        transform: translateX(-60%);
+    }
+}
